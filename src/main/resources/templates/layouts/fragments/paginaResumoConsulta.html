@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+	<div th:fragment="show">
+	
+	    <div id="modalConsultaInfo" class="modal fade">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                    <h3 class="modal-title">Título</h3>
+	                </div>
+	
+	                <div class="modal-body">
+
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<label id="label-peso" for="campo-peso">Peso(kg):</label>
+								<h4 id="campo-peso" style="font-weight:bold;"></h4>
+							</div>
+							<div class="col-md-4 text-center">
+								<label for="campo-cintura"  class="text-center">Cintura(cm):</label>
+								<h4 id="campo-cintura" style="font-weight:bold;" class="text-center"></h4>
+							</div>
+							<div class="col-md-4 text-center">
+								<label for="campo-quadril">Quadril(cm):</label>
+								<h4 id="campo-quadril" style="font-weight:bold;"></h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-center">
+								<label for="campo-indiceMassaCorporal">IMC:</label>
+								<h4 id="campo-indiceMassaCorporal" style="font-weight:bold;"></h4>
+							</div>
+							<div class="col-md-3 text-center">
+								<label for="campo-pctGorduraCorporal">% Gord.Corp:</label>
+								<h4 id="campo-pctGorduraCorporal" style="font-weight:bold;"></h4>
+							</div>
+							<div class="col-md-3 text-center">
+								<label for="campo-pctMuscular">% Muscular:</label>
+								<h4 id="campo-pctMuscular" style="font-weight:bold;"></h4>
+							</div>
+							<div class="col-md-3 text-center">
+								<label for="campo-pctGorduraVisceral">% Gord.Visc.:</label>
+								<h4 id="campo-pctGorduraVisceral" style="font-weight:bold;"></h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label for="campo-laudo">Laudo:</label>
+								<p id="campo-laudo"></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label for="campo-receituario">Receituário:</label>
+								<p id="campo-receituario"></p>
+							</div>
+						</div>
+
+							
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+		<script th:src="@{/js/resumo-consulta.js}"></script>
+	</div>
+</html>
